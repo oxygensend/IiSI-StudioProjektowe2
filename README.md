@@ -1,23 +1,7 @@
-# IiSI-StudioProjektowe2 Smart Contract Examples
+# IiSI-StudioProjektowe2 Smart Contracts
 
-## Contract Example from Consensys/Mythril Repository
-- **Contract Name:** ContractName
-- **Description:** Description of the contract.
-- **Source:** [Consensys/Mythril Repository](https://github.com/Consensys/mythril/tree/develop/solidity_examples)
+Example contracts were chosen from the following repositories:
+- [Consensys/Mythril Repository](https://github.com/Consensys/mythril/tree/develop/solidity_examples)
+- [eth-sri/Securify2 Repository](https://github.com/eth-sri/securify2/tree/master/tests)
+- [crytic/Echidna Repository](https://github.com/crytic/echidna/blob/master/tests/solidity/basic/flags.sol)
 
-```solidity
-// Solidity code from Consensys/Mythril repository
-// Contract Name: ContractName
-// Description: Description of the contract
-<Contract Code Here>
-
-
-// Solidity code from eth-sri/Securify2 repository
-// Contract Name: ContractName
-// Description: Description of the contract
-<Contract Code Here>
-
-// Solidity code from crytic/Echidna repository
-// Contract Name: ContractName
-// Description: Description of the contract
-<Contract Code Here>
