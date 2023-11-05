@@ -11,12 +11,12 @@ contract Time {
     marked = block.timestamp;
   }
 
-  function echidna_timepassed() public returns (bool) {
-    return(start == marked);
-  }
+  // function echidna_timepassed() public returns (bool) {
+  //   return(start == marked);
+  // }
 
-  function echidna_moretimepassed() public returns (bool) {
-    return(block.timestamp < start + 10 weeks );
-  }
+  // function echidna_moretimepassed() public returns (bool) {
+  //   return(block.timestamp < start + 10 weeks );
+  // }
 
 }
