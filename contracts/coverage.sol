@@ -24,7 +24,7 @@ contract Coverage{
         _;
     }
 
-    function Coverage()
+    constructor()
         public 
     {
         owner = msg.sender;
@@ -37,7 +37,7 @@ contract Coverage{
         exploration = true;
     }
 
-    function balanceOf(address user) 
+    function balanceOf(address user)  public
         returns (uint)
     {
         return balances[user];
@@ -90,7 +90,7 @@ contract Coverage{
                 // you will instead give the specified value
                 remove(msg.sender, value);
                 add(user, value);
-                Give(msg.sender, user, value);
+                emit Give(msg.sender, user, value);
             }
         }
     }
