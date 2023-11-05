@@ -1,0 +1,21 @@
+---
+souffle:
+  contracts:
+    - Multiplicator.sol
+
+settings:
+  max_complexity: 3
+  min_souffle_count: 100
+  random_calls: 10
+  time_bound: 1000
+
+prefixes:
+  - function: "multiplicate(address)"
+    inputs:
+      - "0x0123456789abcdef0123456789abcdef01234567" # Adres odbiorcy
+
+properties:
+  - state-reachable: true
+  - safety: true
+  - no-asserts: true
+  - no-gas-exhaustion: true
