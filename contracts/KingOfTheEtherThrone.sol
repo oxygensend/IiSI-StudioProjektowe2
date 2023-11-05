@@ -166,5 +166,20 @@ contract KingOfTheEtherThrone {
     function transferOwnership(address newOwner) onlywizard {
         wizardAddress = newOwner;
     }
+  function echidna_alwaystrue() public returns (bool){
+    return(true);
+  }
+
+  function echidna_alwaystrue2() public returns (bool){
+    return(true);
+  }
+
+  function echidna_alwaystrue3() public returns (bool){
+    return(true);
+  }
+
+  function echidna_revert_always() public returns (bool){
+    revert();
+  }
 
 }

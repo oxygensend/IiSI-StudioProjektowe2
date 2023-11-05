@@ -115,5 +115,21 @@ contract Coverage{
             emit Take(msg.sender, user, value);
         }
     }
+
 }
 
+contract CoverageTest is Coverage {
+
+function echidna_revert_always() public returns (bool){
+    revert();
+  }
+
+  function echidna_revert_always2() public returns (bool){
+    revert();
+  }
+
+  function echidna_revert_always3() public returns (bool){
+    revert();
+  }
+
+}

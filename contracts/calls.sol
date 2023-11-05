@@ -30,4 +30,4 @@ contract Caller {
 	    stored_address = addr;
 	}
 
-}
+       }

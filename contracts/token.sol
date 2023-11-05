@@ -20,3 +20,16 @@ contract Token {
     return balances[_owner];
   }
 }
+
+
+contract TestToken is Token {
+
+  constructor() Token(10) {
+
+  }
+
+  function echidna_test_balance() public returns(bool) {
+    address(0xcafe).call("");
+    return (totalSupply == 0);
+  }
+}

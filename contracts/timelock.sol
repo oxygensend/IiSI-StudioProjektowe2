@@ -21,4 +21,12 @@ contract TimeLock {
         balances[msg.sender] = 0;
         msg.sender.transfer(balances[msg.sender]);
     }
+
+    function echidna_test_balance()  public returns (bool){
+        return (balances[address(0xcafe)] == 0);
+    }
+
+    function echidna_test_lockTime()  public returns (bool){
+        return (lockTime[address(0xcafe)] == 0);
+    }
 }
